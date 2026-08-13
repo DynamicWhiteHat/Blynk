@@ -15,3 +15,100 @@ A feature-rich LED controller
 - Reverse polarity protection and automatic supply switching
 
 ## Image Gallery:
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="assets/BlynkFront.png" width="400" />
+    </td>
+    <td align="center">
+      <img src="assets/ControlFront.png" width="400" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="assets/Case.png" width="400" />
+    </td>
+  </tr>
+</table>
+
+## Why I Designed This Project:
+I began this project because I am getting a new large table built in my room and would love some LED lighting under it. I decided to make myself an LED controller with a lot of features. Most importantly, I wanted to have it be compatible with Alexa to match the other lights in my room. After a quick search, I found that the WLED firmware accomplishes all that I want: it is feature-rich, Alexa compatible, and supports custom ESP32 boards. And so, I embarked on a quest to make the most feature-packed LED controller to exist.
+
+## Schematics And PCBs:
+<table align="center">
+  <tr>
+    <td align="center" colspan="2">
+      <img width="2200" height="1700" alt="image" src="assets/Schematic.png" />
+    </td>
+  </tr>
+  <tr>
+     <td align="center">
+      <img width="997" height="773" alt="image" src="assets/PCBFront.png" />
+    </td>
+    <td align="center">
+      <img width="981" height="788" alt="image" src="assets/PCBBack.png" />
+    </td>
+  </tr>
+</table>
+
+## Usage:
+Follow the instructions on the [WLED getting started page](https://kno.wled.ge/basics/getting-started/) after assembling your PCB to get it running.
+
+## BOM:
+|Part                       |Quantity       |Price              |Link                                                                                  |                 |        |   |                                            |
+|---------------------------|---------------|-------------------|--------------------------------------------------------------------------------------|-----------------------|--------------|---------|--------------------------------------------------|
+|PCB+Stencil                |1              |$17.94             |JLCPCB Quote                                                                          |                       |              |         |                                                  |
+|PCB Parts                  |1              |$56.25             |See Below                                                                             |                       |              |         |                                                  |
+|LED Strip                  |1              |$6.96              |https://www.aliexpress.us/item/3256808756097464.html                                  |                       |              |         |                                                  |
+|M2 Screws                  |1              |$5.22              |https://www.aliexpress.us/item/3256807092650644.html                                  |                       |              |         |                                                  |
+|Power Supply               |1              |$13.94             |https://www.amazon.com/TOBWOLF-100V-240V-Transformer-Switching-Converter/dp/B0B1DGBVKB|                       |              |         |                                                  |
+|PIR                        |1              |$3.48              |https://www.aliexpress.us/item/3256812509957711.html                                  |                       |              |         |                                                  |
+|                           |Total          |$103.79            |                                                                                      |                       |              |         |                                                  |
+|LCSC BOM                   |               |                   |                                                                                      |                       |              |         |                                                  |
+|Description                |Quantity Needed|Mrf#               |Minimum Order Qty.                                                                    |Unit Price(USD)        |Ext.Price(USD)|LCSC#    |Product Link                                      |
+|0.1uF                      |6              |CC0603KRX7R9BB104  |50                                                                                    |0.0186                 |0.93          |C14663   |https://www.lcsc.com/product-detail/C14663.html   |
+|100K                       |1              |0603WAF1003T5E     |100                                                                                   |0.0068                 |0.68          |C25803   |https://www.lcsc.com/product-detail/C25803.html   |
+|100R                       |3              |0603WAF1000T5E     |100                                                                                   |0.0222                 |2.22          |C22775   |https://www.lcsc.com/product-detail/C22775.html   |
+|100nF                      |4              |CC0603KRX7R9BB104  |50                                                                                    |0.0186                 |0.93          |C14663   |https://www.lcsc.com/product-detail/C14663.html   |
+|10K                        |8              |0603WAF1002T5E     |100                                                                                   |0.0085                 |0.85          |C25804   |https://www.lcsc.com/product-detail/C25804.html   |
+|10uF                       |1              |CL10A106MA8NRNC    |20                                                                                    |0.0841                 |1.68          |C96446   |https://www.lcsc.com/product-detail/C96446.html   |
+|150R                       |1              |0603WAF1500T5E     |100                                                                                   |0.0087                 |0.87          |C22808   |https://www.lcsc.com/product-detail/C22808.html   |
+|1K                         |1              |0603WAF1001T5E     |100                                                                                   |0.0058                 |0.58          |C21190   |https://www.lcsc.com/product-detail/C21190.html   |
+|1uF                        |10             |CL10A105KB8NNNC    |50                                                                                    |0.0275                 |1.38          |C15849   |https://www.lcsc.com/product-detail/C15849.html   |
+|2.2uH                      |1              |CMH160808B2R2MT    |20                                                                                    |0.0324                 |0.65          |C394950  |https://www.lcsc.com/product-detail/C394950.html  |
+|20K                        |1              |0603WAF2002T5E     |100                                                                                   |0.0052                 |0.52          |C4184    |https://www.lcsc.com/product-detail/C4184.html    |
+|220R                       |5              |0603WAF2200T5E     |100                                                                                   |0.0086                 |0.86          |C22962   |https://www.lcsc.com/product-detail/C22962.html   |
+|22uF                       |5              |CL10A226MQ8NRNC    |20                                                                                    |0.0313                 |0.63          |C59461   |https://www.lcsc.com/product-detail/C59461.html   |
+|33.2K                      |1              |0603WAF3322T5E     |100                                                                                   |0.0034                 |0.34          |C23003   |https://www.lcsc.com/product-detail/C23003.html   |
+|4.7K                       |3              |0603WAF4701T5E     |100                                                                                   |0.0118                 |1.18          |C23162   |https://www.lcsc.com/product-detail/C23162.html   |
+|4.7uF                      |1              |CL10A475KO8NNNC    |10                                                                                    |0.0335                 |0.34          |C19666   |https://www.lcsc.com/product-detail/C19666.html   |
+|47R                        |1              |0603WAF470JT5E     |100                                                                                   |0.0075                 |0.75          |C23182   |https://www.lcsc.com/product-detail/C23182.html   |
+|5.1k                       |2              |0603WAF5101T5E     |100                                                                                   |0.0038                 |0.38          |C23186   |https://www.lcsc.com/product-detail/C23186.html   |
+|750 mA                     |1              |BSMD0603-075-6V    |10                                                                                    |0.0672                 |0.67          |C914092  |https://www.lcsc.com/product-detail/C914092.html  |
+|8A                         |1              |BSMD2920L-1000-24V |1                                                                                     |0.634                  |0.63          |C48392676|https://www.lcsc.com/product-detail/C48392676.html|
+|AO3400A                    |6              |AO3400A            |10                                                                                    |0.0849                 |0.85          |C20917   |https://www.lcsc.com/product-detail/C20917.html   |
+|AOD4184A                   |1              |AOD4184A           |5                                                                                     |0.3474                 |1.74          |C99124   |https://www.lcsc.com/product-detail/C99124.html   |
+|ATtiny1616-S               |1              |ATTINY1616-SN      |1                                                                                     |2.9131                 |2.91          |C614136  |https://www.lcsc.com/product-detail/C614136.html  |
+|AudioPlug3                 |1              |SJ1-3523N          |1                                                                                     |0.8493                 |0.85          |C20182914|https://www.lcsc.com/product-detail/C20182914.html|
+|BH1750                     |1              |BH1750FVI-TR       |1                                                                                     |0.9687                 |0.97          |C78960   |https://www.lcsc.com/product-detail/C78960.html   |
+|BLM15PX121SN1D             |2              |BLM15PX121SN1D11   |50                                                                                    |0.0097                 |0.49          |C882964  |https://www.lcsc.com/product-detail/C882964.html  |
+|CR2032                     |1              |BS-07-A1BJ001      |5                                                                                     |0.379                  |1.9           |C2979167 |https://www.lcsc.com/product-detail/C2979167.html |
+|D                          |1              |BSD3C051V          |10                                                                                    |0.0661                 |0.66          |C151996  |https://www.lcsc.com/product-detail/C151996.html  |
+|ES7243                     |1              |ES7243E            |1                                                                                     |0.5557                 |0.56          |C2929446 |https://www.lcsc.com/product-detail/C2929446.html |
+|ESP32-S3-WROOM-1           |1              |ESP32-S3-WROOM-1-N8|1                                                                                     |4.91                   |4.91          |C2913198 |https://www.lcsc.com/product-detail/C2913198.html |
+|ICS-43434                  |1              |ICS-43434          |1                                                                                     |3.8207                 |3.82          |C5656610 |https://www.lcsc.com/product-detail/C5656610.html |
+|LM5050-1                   |1              |LM5050MK-1/NOPB    |1                                                                                     |1.1867                 |1.19          |C129323  |https://www.lcsc.com/product-detail/C129323.html  |
+|SMBJ15A                    |1              |SMBJ15A            |5                                                                                     |0.0539                 |0.27          |C19077569|https://www.lcsc.com/product-detail/C19077569.html|
+|SS34                       |1              |SS34               |20                                                                                    |0.0352                 |0.7           |C8678    |https://www.lcsc.com/product-detail/C8678.html    |
+|SW_Push                    |2              |TS-1088-AR02016    |10                                                                                    |0.0529                 |0.53          |C720477  |https://www.lcsc.com/product-detail/C720477.html  |
+|SW_Push_45deg              |12             |TS-1088-AR02016    |20                                                                                    |0.0529                 |1.06          |C720477  |https://www.lcsc.com/product-detail/C720477.html  |
+|Screw_Terminal_01x02       |1              |KF126-5.0-2P       |5                                                                                     |0.0844                 |0.42          |C474900  |https://www.lcsc.com/product-detail/C474900.html  |
+|TPS563201                  |1              |TPS563201DDCR      |10                                                                                    |0.0769                 |0.77          |C116592  |https://www.lcsc.com/product-detail/C116592.html  |
+|TSAL4400                   |1              |TSAL4400           |5                                                                                     |0.4254                 |2.13          |C94135   |https://www.lcsc.com/product-detail/C94135.html   |
+|TSOP38238                  |1              |TSOP38238          |1                                                                                     |0.7752                 |0.78          |C141632  |https://www.lcsc.com/product-detail/C141632.html  |
+|USBLC6-2P6                 |1              |USBLC6-2P6         |5                                                                                     |0.2787                 |1.39          |C15999   |https://www.lcsc.com/product-detail/C15999.html   |
+|USB_C_Receptacle_USB2.0_16P|1              |TYPE-C-31-M-12     |5                                                                                     |0.1716                 |0.86          |C165948  |https://www.lcsc.com/product-detail/C165948.html  |
+|                           |               |                   |                                                                                      |Subtotal:              |46.83         |         |                                                  |
+|                           |               |                   |                                                                                      |Shipping:              |12.76         |         |                                                  |
+|                           |               |                   |                                                                                      |Total (after discount):|$56.25        |         |                                                  |
+
